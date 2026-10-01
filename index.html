@@ -84,14 +84,21 @@
             font-size: 18px;
         }
 
-        .button {
+        .button,
+        .repo-button {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
+            margin-top: 18px;
+            padding: 10px 18px;
             background: #172554;
             color: white;
             text-decoration: none;
             border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .button:hover,
+        .repo-button:hover {
+            opacity: 0.85;
         }
 
         section {
@@ -216,12 +223,15 @@
     <section class="hero" id="home">
         <div>
             <h1>Pooja Utagi</h1>
-            <h3>B.Tech Computer Science and Engineering | 3rd Semester</h3>
+
+            <h3>
+                B.Tech Computer Science and Engineering | 3rd Semester
+            </h3>
 
             <p>
                 Welcome to my personal portfolio. I am a Computer Science
-                student interested in software development, programming and
-                problem solving.
+                student interested in software development, programming
+                and problem solving.
             </p>
 
             <a href="#projects" class="button">View My Projects</a>
@@ -248,35 +258,51 @@
         <div class="projects">
 
             <div class="card">
-                <h3>Activity 1</h3>
+                <h3>Activity 1 — Development Environment</h3>
                 <p>
-                    Development environment setup using Visual Studio Code
-                    and a basic project.
+                    Set up a development environment using Visual Studio
+                    Code and worked with a basic programming project.
                 </p>
+
+                <a href="https://github.com/poojautagi8-source/Activity-1-Dev-Environment-Setup"
+                   class="repo-button"
+                   target="_blank">
+                    View Repository
+                </a>
             </div>
 
             <div class="card">
-                <h3>Activity 2</h3>
+                <h3>Activity 2 — Git & GitHub</h3>
                 <p>
-                    Git and GitHub setup with repository management and
-                    basic version control workflow.
+                    Practiced Git and GitHub fundamentals including
+                    repositories, commits and basic repository management.
                 </p>
+
+                <a href="#" class="repo-button">View Repository</a>
             </div>
 
             <div class="card">
-                <h3>Activity 3</h3>
+                <h3>Activity 3 — GitLens & Live Share</h3>
                 <p>
-                    GitLens and Live Share collaboration activity focused on
-                    version control and collaborative development.
+                    Explored GitLens and Live Share to understand version
+                    control information and collaborative development.
                 </p>
+
+                <a href="#" class="repo-button">View Repository</a>
             </div>
 
             <div class="card">
-                <h3>Activity 4</h3>
+                <h3>Activity 4 — LeetCode Solutions</h3>
                 <p>
-                    LeetCode practice repository containing programming
-                    solutions and coding practice.
+                    Created and organized a GitHub repository containing
+                    programming solutions from LeetCode practice.
                 </p>
+
+                <a href="https://github.com/poojautagi8-source/leetcode-solutions"
+                   class="repo-button"
+                   target="_blank">
+                    View Repository
+                </a>
             </div>
 
         </div>
@@ -303,9 +329,8 @@
             <p>
                 My goal is to become a skilled software developer by
                 improving my programming, data structures, problem-solving
-                and project development skills. I also want to build
-                practical projects and continue developing my technical
-                knowledge.
+                and project development skills. I want to build practical
+                projects and continue developing my technical knowledge.
             </p>
         </div>
     </section>
@@ -321,12 +346,6 @@
             <p>
                 <a href="#" target="_blank">
                     My GitHub Profile
-                </a>
-            </p>
-
-            <p>
-                <a href="#" target="_blank">
-                    LeetCode Solutions Repository
                 </a>
             </p>
         </div>
