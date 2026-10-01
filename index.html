@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Utagi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 8%;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            color: #172554;
+            margin-bottom: 15px;
+        }
+
+        .hero h3 {
+            font-size: 24px;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #172554;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #172554;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            color: #172554;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            font-weight: bold;
+            color: #172554;
+        }
+
+        .goal {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #172554;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Pooja Utagi</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#goal">Goal</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Pooja Utagi</h1>
+            <h3>B.Tech Computer Science and Engineering | 3rd Semester</h3>
+
+            <p>
+                Welcome to my personal portfolio. I am a Computer Science
+                student interested in software development, programming and
+                problem solving.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a 3rd semester B.Tech Computer Science and Engineering
+                student at REVA University. I am interested in software
+                development, programming and problem solving. I am improving
+                my technical skills through academic activities, coding
+                practice and GitHub projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects & Activities</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Activity 1</h3>
+                <p>
+                    Development environment setup using Visual Studio Code
+                    and a basic project.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Activity 2</h3>
+                <p>
+                    Git and GitHub setup with repository management and
+                    basic version control workflow.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Activity 3</h3>
+                <p>
+                    GitLens and Live Share collaboration activity focused on
+                    version control and collaborative development.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Activity 4</h3>
+                <p>
+                    LeetCode practice repository containing programming
+                    solutions and coding practice.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">C</span>
+            <span class="skill">C++</span>
+            <span class="skill">Python</span>
+            <span class="skill">Visual Studio Code</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Problem Solving</span>
+        </div>
+    </section>
+
+    <section id="goal">
+        <h2>Career Goal</h2>
+
+        <div class="goal">
+            <p>
+                My goal is to become a skilled software developer by
+                improving my programming, data structures, problem-solving
+                and project development skills. I also want to build
+                practical projects and continue developing my technical
+                knowledge.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact / GitHub</h2>
+
+        <div class="contact">
+            <p>
+                You can find my coding work and projects on GitHub.
+            </p>
+
+            <p>
+                <a href="#" target="_blank">
+                    My GitHub Profile
+                </a>
+            </p>
+
+            <p>
+                <a href="#" target="_blank">
+                    LeetCode Solutions Repository
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Pooja Utagi | Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
